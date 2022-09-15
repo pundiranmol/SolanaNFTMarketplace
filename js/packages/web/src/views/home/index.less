@@ -1,6 +1,6 @@
 header.ant-layout-header.App-Bar {
   width: 100%;
-  background: transparent;
+  background: #001529 !important;
   display: flex;
   justify-content: center;
   height: fit-content;
@@ -81,19 +81,24 @@ a:active {
   height: 40px;
   opacity: 0.8;
   &.ant-tabs-tab-active {
-    background: rgba(255, 255, 255, 0.1);
-    box-shadow: 0 0 24px rgba(26, 26, 26, 0.12);
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 24px rgba(26, 26, 26, 0.2);
     border-radius: 8px;
     opacity: 1;
 
     .ant-tabs-tab-btn {
-      color: white;
+      color: #013E62;
     }
   }
 
   .ant-tabs-tab-btn {
     display: flex;
     align-items: center;
+    color: #a9a491;
+
+    &:hover {
+      color: #414C7D
+    }
   }
   span.live {
     width: 8px;

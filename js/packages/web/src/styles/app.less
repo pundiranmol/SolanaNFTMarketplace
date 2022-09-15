@@ -1,6 +1,9 @@
 @import '~antd/es/style/themes/dark.less';
 @import '~antd/dist/antd.dark.less';
 
+@active-text-color: #013E62;
+@active-border-text-color: #013E62;
+
 html {
   overflow-y: scroll;
   width: 100%;
@@ -187,7 +190,8 @@ code {
 
 .ant-tabs-tab-active {
   .tab-title {
-    color: @text-color;
+    color: @active-text-color;
+    border-color: @active-border-text-color;
   }
 }
 
@@ -284,6 +288,9 @@ h1 {
       border-color: rgba(255, 255, 255, 0.05);
       color: #ffffff;
     }
+  }
+  > span {
+    font-size: 18px;
   }
 }
 
