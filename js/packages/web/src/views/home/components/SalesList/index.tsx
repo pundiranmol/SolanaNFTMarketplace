@@ -44,8 +44,8 @@ export const SalesListView = (props: { collectionMintFilter?: string }) => {
       {!props.collectionMintFilter && (
         <Banner
           src=""
-          headingText="The amazing world of BlockChainSentry."
-          subHeadingText="Buy exclusive BlockChainSentry NFTs."
+          headingText="The amazing world of Solana Marketplace."
+          subHeadingText="Buy exclusive Solana Marketplace NFTs."
           actionComponent={<HowToBuyModal buttonClassName="secondary-btn" />}
           useBannerBg
         />

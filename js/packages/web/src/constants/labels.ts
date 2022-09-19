@@ -1,9 +1,9 @@
 export const LABELS = {
-  STORE_NAME: 'Metaplex',
+  STORE_NAME: 'Solana Marketplace',
   CONNECT_LABEL: 'Connect Wallet',
   GIVE_SOL: 'Give me SOL',
   FAUCET_INFO:
-    'This faucet will help you fund your accounts outside of Solana main network.',
+    'This faucet will help you fund your accounts outside of Solana Marketplace main network.',
   ACCOUNT_FUNDED: 'Account funded.',
   MENU_HOME: 'Home',
   MENU_FAUCET: 'Faucet',
