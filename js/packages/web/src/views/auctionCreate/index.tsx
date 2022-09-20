@@ -690,7 +690,12 @@ export const AuctionCreateView = () => {
           {stepsByCategory[attributes.category][step][1]}
           {0 < step && stepsVisible && (
             <div style={{ margin: 'auto', width: 'fit-content' }}>
-              <Button onClick={() => gotoNextStep(step - 1)}>Back</Button>
+              <Button
+                className="back-btn"
+                onClick={() => gotoNextStep(step - 1)}
+              >
+                Back
+              </Button>
             </div>
           )}
         </Col>

@@ -229,7 +229,9 @@ export const ArtCreateView = () => {
           )}
           {0 < step && step < 5 && (
             <div style={{ margin: 'auto', width: 'fit-content' }}>
-              <Button onClick={() => gotoStep(step - 1)}>Back</Button>
+              <Button className="back-btn" onClick={() => gotoStep(step - 1)}>
+                Back
+              </Button>
             </div>
           )}
         </Col>
