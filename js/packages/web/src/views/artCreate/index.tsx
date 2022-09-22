@@ -254,7 +254,7 @@ const CategoryStep = (props: {
         <p>
           First time creating on Metaplex?{' '}
           <a
-            href="https://docs.metaplex.com/storefront/create"
+            href="https://drive.google.com/file/d/1voVLnLhz-bJLzKSjHDRaOCeIrTMZShqg/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
           >
