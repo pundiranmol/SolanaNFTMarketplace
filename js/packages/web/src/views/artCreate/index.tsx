@@ -1044,7 +1044,7 @@ const RoyaltiesStep = (props: {
           </span>
           <span
             style={{
-              color: 'rgba(255, 255, 255, 0.7)',
+              color: '#2A2630',
               verticalAlign: 'middle',
               lineHeight: 1,
             }}
