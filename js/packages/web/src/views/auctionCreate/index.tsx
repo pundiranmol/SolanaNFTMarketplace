@@ -2169,10 +2169,7 @@ const Congrats = (props: {
           <Button
             className="metaplex-button"
             onClick={() => window.open(newTweetURL(), '_blank')}
-          >
-            <span>Share it on Twitter</span>
-            <span>&gt;</span>
-          </Button>
+          ></Button>
           <Button
             className="metaplex-button"
             onClick={() => {
