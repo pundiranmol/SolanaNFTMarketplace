@@ -454,7 +454,7 @@ const UploadStep = (props: {
           {coverArtError ? (
             <Text type="danger">{coverArtError}</Text>
           ) : (
-            <p className="ant-upload-text" style={{ color: '#6d6d6d' }}>
+            <p className="ant-upload-text" style={{ color: '#433E37' }}>
               Drag and drop, or click to browse
             </p>
           )}
@@ -491,7 +491,7 @@ const UploadStep = (props: {
             <div className="ant-upload-drag-icon">
               <h3 style={{ fontWeight: 700 }}>Upload your creation</h3>
             </div>
-            <p className="ant-upload-text" style={{ color: '#6d6d6d' }}>
+            <p className="ant-upload-text" style={{ color: '#433E37' }}>
               Drag and drop, or click to browse
             </p>
           </Dragger>
@@ -1323,19 +1323,19 @@ const Congrats = (props: {
 }) => {
   const history = useHistory();
 
-  const newTweetURL = () => {
-    const params = {
-      text: "I've created a new NFT artwork on Metaplex, check it out!",
-      url: `${
-        window.location.origin
-      }/#/art/${props.nft?.metadataAccount.toString()}`,
-      hashtags: 'NFT,Crypto,Metaplex',
-      // via: "Metaplex",
-      related: 'Metaplex,Solana',
-    };
-    const queryParams = new URLSearchParams(params).toString();
-    return `https://twitter.com/intent/tweet?${queryParams}`;
-  };
+  // const newTweetURL = () => {
+  //   const params = {
+  //     text: "I've created a new NFT artwork on Metaplex, check it out!",
+  //     url: `${
+  //       window.location.origin
+  //     }/#/art/${props.nft?.metadataAccount.toString()}`,
+  //     hashtags: 'NFT,Crypto,Metaplex',
+  //     // via: "Metaplex",
+  //     related: 'Metaplex,Solana',
+  //   };
+  //   const queryParams = new URLSearchParams(params).toString();
+  //   return `https://twitter.com/intent/tweet?${queryParams}`;
+  // };
 
   if (props.alert) {
     // TODO  - properly reset this components state on error
@@ -1354,13 +1354,6 @@ const Congrats = (props: {
     <>
       <div className="waiting-title">Congratulations, you created an NFT!</div>
       <div className="congrats-button-container">
-        <Button
-          className="metaplex-button"
-          onClick={() => window.open(newTweetURL(), '_blank')}
-        >
-          <span>Share it on Twitter</span>
-          <span>&gt;</span>
-        </Button>
         <Button
           className="metaplex-button"
           onClick={() =>
